@@ -4,14 +4,10 @@ block content
   div(class="row")
     div(class="col2")
       h2 Recent Answers
-      ul(class="list") 
-        li How to setup Help Portal
-        li How to setup Help Portal
-        li How to setup Help Portal
-        li How to setup Help Portal
-        li How to setup Help Portal
-        li How to setup Help Portal
-    div(class="col2")    
+      ul(class="list")
+        for answer in answers
+          li= answer.title + " " + answer.description
+    div(class="col2")
       h2 Top View Answers
       ul(class="list")
         li How to setup Help Portal
