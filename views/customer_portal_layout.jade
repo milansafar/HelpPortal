@@ -2,8 +2,21 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
   body
-    h1 Help Portal: Customer Application
+    div(class="header")
+      div(class="content")
+        span(class="title") Help Portal
+        br
+        span(class="moto") Help Portal for your customers
+      
+    div(class="content")
+      div(class="search")
+        form(action="/" me)
+          input(type="text" name="search")
+          button Search
 
-    block content
+      block content
+
+    div(class="footer")
+      div(class="content") With <a href="https://github.com/milansafar/HelpPortal"> GitHub</a> love and <a href="https://github.com/milansafar">Milan's</a> developemt skills.

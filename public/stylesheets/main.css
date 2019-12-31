@@ -1,0 +1,75 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+.header, .footer {
+  padding: 20px 0 20px 0;
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  clear: both;
+}
+
+.header .title, .footer .title {
+  font-size: 300%;
+}
+
+.header .moto, .footer .moto {
+  font-size: 150%;
+}
+
+.header a, .footer a {
+  color: cornflowerblue;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.row .col2 {
+  width: 400px;
+  float: left;
+}
+
+.search {
+  padding: 20px 0 20px 0;
+}
+
+.search input, .search button {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search input {
+  width: 70%;
+  border: 1px solid #444;
+}
+
+.search button {
+  width: 25%;
+  background-color: cornflowerblue;
+  color: #fff;
+  border: 1px solid cornflowerblue;
+}
+
+.list {
+  margin: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.list li {
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */
