@@ -6,13 +6,16 @@ html
   body
     div(class="header")
       div(class="content")
-        span(class="title") Help Portal
+        a(href="/")
+          span(class="title") Help Portal
         br
         span(class="moto") Help Portal for your customers
+        br
+        a(href="/answers/add") Add Answer
       
     div(class="content")
       div(class="search")
-        form(action="/" me)
+        form(action="/")
           input(type="text" name="search")
           button Search
 

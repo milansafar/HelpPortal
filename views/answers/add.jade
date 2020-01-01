@@ -1,0 +1,14 @@
+extends ../customer_portal_layout
+
+block content
+    h1 Add Answer
+    form(action="/answers" method="post")
+        span Title
+        br
+        input(name="title")
+        br
+        span Description
+        br
+        input(name="description")
+        br
+        input(type="submit")
