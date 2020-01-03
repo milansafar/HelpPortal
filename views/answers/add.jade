@@ -2,6 +2,12 @@ extends ../customer_portal_layout
 
 block content
     h1 Add Answer
+
+    if errors
+        for error in errors
+            b= error.msg
+            br
+
     form(action="/answers" method="post")
         span Title
         br
@@ -12,3 +18,4 @@ block content
         input(name="description")
         br
         input(type="submit")
+        input(type="hidden" name="_csrf" value=csrfToken)
