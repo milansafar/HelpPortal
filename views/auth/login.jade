@@ -1,0 +1,21 @@
+extends ../customer_portal_layout
+
+block content
+    h1 Login
+    
+    if errors
+        for error in errors
+            b= error.msg
+            br
+
+    form(action="/auth/login" method="post")
+        span Login
+        br
+        input(name="login")
+        br
+        span Password
+        br
+        input(name="password" type="password")
+        br
+        input(type="submit")
+        input(type="hidden" name="_csrf" value=csrfToken)

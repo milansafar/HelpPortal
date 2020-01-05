@@ -10,6 +10,6 @@ Answer.init({
     sequelize, modelName: 'answer'
 });
 
-sequelize.sync()
+sequelize.sync();
 
-module.exports = Answer
+module.exports = Answer;
